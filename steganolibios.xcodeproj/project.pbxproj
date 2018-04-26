@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BAE917519BF10370035F1DC /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE917419BF10370035F1DC /* Base64.m */; };
+		DD82151319B712580076DA66 /* LSB2bit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD82151219B712580076DA66 /* LSB2bit.m */; };
+		DD82151619B73B7A0076DA66 /* Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD82151519B73B7A0076DA66 /* Decoder.m */; };
+		DDD105FA19B61C6C0096326C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD105F919B61C6C0096326C /* Foundation.framework */; };
+		DDD105FC19B61C6C0096326C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD105FB19B61C6C0096326C /* CoreGraphics.framework */; };
+		DDD105FE19B61C6C0096326C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD105FD19B61C6C0096326C /* UIKit.framework */; };
+		DDD1060419B61C6C0096326C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDD1060219B61C6C0096326C /* InfoPlist.strings */; };
+		DDD1060619B61C6C0096326C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1060519B61C6C0096326C /* main.m */; };
+		DDD1060A19B61C6C0096326C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1060919B61C6C0096326C /* AppDelegate.m */; };
+		DDD1060D19B61C6C0096326C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD1060B19B61C6C0096326C /* Main.storyboard */; };
+		DDD1061019B61C6C0096326C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1060F19B61C6C0096326C /* ViewController.m */; };
+		DDD1061219B61C6C0096326C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD1061119B61C6C0096326C /* Images.xcassets */; };
+		DDD1061A19B61C6C0096326C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD105F919B61C6C0096326C /* Foundation.framework */; };
+		DDD1061B19B61C6C0096326C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD105FD19B61C6C0096326C /* UIKit.framework */; };
+		DDD1062319B61C6C0096326C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDD1062119B61C6C0096326C /* InfoPlist.strings */; };
+		DDD1062519B61C6C0096326C /* steganolibiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1062419B61C6C0096326C /* steganolibiosTests.m */; };
+		DDD1063219B61D550096326C /* Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1063119B61D550096326C /* Encoder.m */; };
+		DDD1064F19B6222D0096326C /* ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1063519B6222D0096326C /* ANImageBitmapRep.m */; };
+		DDD1065019B6222D0096326C /* BitmapContextRep.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1063719B6222D0096326C /* BitmapContextRep.m */; };
+		DDD1065119B6222D0096326C /* NSImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1063A19B6222D0096326C /* NSImage+ANImageBitmapRep.m */; };
+		DDD1065219B6222D0096326C /* OSCommonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1063C19B6222D0096326C /* OSCommonImage.m */; };
+		DDD1065319B6222D0096326C /* UIImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1063E19B6222D0096326C /* UIImage+ANImageBitmapRep.m */; };
+		DDD1065419B6222D0096326C /* CGContextCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1064119B6222D0096326C /* CGContextCreator.m */; };
+		DDD1065519B6222D0096326C /* CGImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1064319B6222D0096326C /* CGImageContainer.m */; };
+		DDD1065619B6222D0096326C /* BitmapContextManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1064619B6222D0096326C /* BitmapContextManipulator.m */; };
+		DDD1065719B6222D0096326C /* BitmapCropManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1064819B6222D0096326C /* BitmapCropManipulator.m */; };
+		DDD1065819B6222D0096326C /* BitmapDrawManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1064A19B6222D0096326C /* BitmapDrawManipulator.m */; };
+		DDD1065919B6222D0096326C /* BitmapRotationManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1064C19B6222D0096326C /* BitmapRotationManipulator.m */; };
+		DDD1065A19B6222D0096326C /* BitmapScaleManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1064E19B6222D0096326C /* BitmapScaleManipulator.m */; };
+		DDD1065D19B622830096326C /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDD1065C19B622830096326C /* pic.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDD1061C19B61C6C0096326C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDD105EE19B61C6C0096326C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD105F519B61C6C0096326C;
+			remoteInfo = steganolibios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BAE917319BF10370035F1DC /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		7BAE917419BF10370035F1DC /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		DD82151119B712580076DA66 /* LSB2bit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSB2bit.h; sourceTree = "<group>"; };
+		DD82151219B712580076DA66 /* LSB2bit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSB2bit.m; sourceTree = "<group>"; };
+		DD82151419B73B7A0076DA66 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		DD82151519B73B7A0076DA66 /* Decoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decoder.m; sourceTree = "<group>"; };
+		DDD105F619B61C6C0096326C /* steganolibios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = steganolibios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD105F919B61C6C0096326C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDD105FB19B61C6C0096326C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDD105FD19B61C6C0096326C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDD1060119B61C6C0096326C /* steganolibios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "steganolibios-Info.plist"; sourceTree = "<group>"; };
+		DDD1060319B61C6C0096326C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDD1060519B61C6C0096326C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDD1060719B61C6C0096326C /* steganolibios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "steganolibios-Prefix.pch"; sourceTree = "<group>"; };
+		DDD1060819B61C6C0096326C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDD1060919B61C6C0096326C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDD1060C19B61C6C0096326C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDD1060E19B61C6C0096326C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDD1060F19B61C6C0096326C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDD1061119B61C6C0096326C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDD1061719B61C6C0096326C /* steganolibiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = steganolibiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD1062019B61C6C0096326C /* steganolibiosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "steganolibiosTests-Info.plist"; sourceTree = "<group>"; };
+		DDD1062219B61C6C0096326C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDD1062419B61C6C0096326C /* steganolibiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = steganolibiosTests.m; sourceTree = "<group>"; };
+		DDD1063019B61D550096326C /* Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encoder.h; sourceTree = "<group>"; };
+		DDD1063119B61D550096326C /* Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encoder.m; sourceTree = "<group>"; };
+		DDD1063419B6222D0096326C /* ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANImageBitmapRep.h; sourceTree = "<group>"; };
+		DDD1063519B6222D0096326C /* ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANImageBitmapRep.m; sourceTree = "<group>"; };
+		DDD1063619B6222D0096326C /* BitmapContextRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextRep.h; sourceTree = "<group>"; };
+		DDD1063719B6222D0096326C /* BitmapContextRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextRep.m; sourceTree = "<group>"; };
+		DDD1063919B6222D0096326C /* NSImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		DDD1063A19B6222D0096326C /* NSImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		DDD1063B19B6222D0096326C /* OSCommonImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCommonImage.h; sourceTree = "<group>"; };
+		DDD1063C19B6222D0096326C /* OSCommonImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCommonImage.m; sourceTree = "<group>"; };
+		DDD1063D19B6222D0096326C /* UIImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		DDD1063E19B6222D0096326C /* UIImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		DDD1064019B6222D0096326C /* CGContextCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextCreator.h; sourceTree = "<group>"; };
+		DDD1064119B6222D0096326C /* CGContextCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGContextCreator.m; sourceTree = "<group>"; };
+		DDD1064219B6222D0096326C /* CGImageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageContainer.h; sourceTree = "<group>"; };
+		DDD1064319B6222D0096326C /* CGImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageContainer.m; sourceTree = "<group>"; };
+		DDD1064519B6222D0096326C /* BitmapContextManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextManipulator.h; sourceTree = "<group>"; };
+		DDD1064619B6222D0096326C /* BitmapContextManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextManipulator.m; sourceTree = "<group>"; };
+		DDD1064719B6222D0096326C /* BitmapCropManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapCropManipulator.h; sourceTree = "<group>"; };
+		DDD1064819B6222D0096326C /* BitmapCropManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapCropManipulator.m; sourceTree = "<group>"; };
+		DDD1064919B6222D0096326C /* BitmapDrawManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapDrawManipulator.h; sourceTree = "<group>"; };
+		DDD1064A19B6222D0096326C /* BitmapDrawManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapDrawManipulator.m; sourceTree = "<group>"; };
+		DDD1064B19B6222D0096326C /* BitmapRotationManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapRotationManipulator.h; sourceTree = "<group>"; };
+		DDD1064C19B6222D0096326C /* BitmapRotationManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapRotationManipulator.m; sourceTree = "<group>"; };
+		DDD1064D19B6222D0096326C /* BitmapScaleManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapScaleManipulator.h; sourceTree = "<group>"; };
+		DDD1064E19B6222D0096326C /* BitmapScaleManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapScaleManipulator.m; sourceTree = "<group>"; };
+		DDD1065C19B622830096326C /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDD105F319B61C6C0096326C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD105FC19B61C6C0096326C /* CoreGraphics.framework in Frameworks */,
+				DDD105FE19B61C6C0096326C /* UIKit.framework in Frameworks */,
+				DDD105FA19B61C6C0096326C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD1061419B61C6C0096326C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD1061B19B61C6C0096326C /* UIKit.framework in Frameworks */,
+				DDD1061A19B61C6C0096326C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDD105ED19B61C6C0096326C = {
+			isa = PBXGroup;
+			children = (
+				DDD105FF19B61C6C0096326C /* steganolibios */,
+				DDD1061E19B61C6C0096326C /* steganolibiosTests */,
+				DDD105F819B61C6C0096326C /* Frameworks */,
+				DDD105F719B61C6C0096326C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDD105F719B61C6C0096326C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDD105F619B61C6C0096326C /* steganolibios.app */,
+				DDD1061719B61C6C0096326C /* steganolibiosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDD105F819B61C6C0096326C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDD105F919B61C6C0096326C /* Foundation.framework */,
+				DDD105FB19B61C6C0096326C /* CoreGraphics.framework */,
+				DDD105FD19B61C6C0096326C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDD105FF19B61C6C0096326C /* steganolibios */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1060B19B61C6C0096326C /* Main.storyboard */,
+				DDD1063319B6222D0096326C /* ANImageBitmapRep */,
+				DDD1062F19B61D3C0096326C /* LOG */,
+				DDD1062E19B61C840096326C /* UI */,
+				DDD1065B19B6225C0096326C /* RES */,
+				DDD1060819B61C6C0096326C /* AppDelegate.h */,
+				DDD1060919B61C6C0096326C /* AppDelegate.m */,
+				DDD1061119B61C6C0096326C /* Images.xcassets */,
+				DDD1060019B61C6C0096326C /* Supporting Files */,
+			);
+			path = steganolibios;
+			sourceTree = "<group>";
+		};
+		DDD1060019B61C6C0096326C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1060119B61C6C0096326C /* steganolibios-Info.plist */,
+				DDD1060219B61C6C0096326C /* InfoPlist.strings */,
+				DDD1060519B61C6C0096326C /* main.m */,
+				DDD1060719B61C6C0096326C /* steganolibios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDD1061E19B61C6C0096326C /* steganolibiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1062419B61C6C0096326C /* steganolibiosTests.m */,
+				DDD1061F19B61C6C0096326C /* Supporting Files */,
+			);
+			path = steganolibiosTests;
+			sourceTree = "<group>";
+		};
+		DDD1061F19B61C6C0096326C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1062019B61C6C0096326C /* steganolibiosTests-Info.plist */,
+				DDD1062119B61C6C0096326C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDD1062E19B61C840096326C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7BAE917319BF10370035F1DC /* Base64.h */,
+				7BAE917419BF10370035F1DC /* Base64.m */,
+				DDD1060E19B61C6C0096326C /* ViewController.h */,
+				DDD1060F19B61C6C0096326C /* ViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		DDD1062F19B61D3C0096326C /* LOG */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1063019B61D550096326C /* Encoder.h */,
+				DDD1063119B61D550096326C /* Encoder.m */,
+				DD82151419B73B7A0076DA66 /* Decoder.h */,
+				DD82151519B73B7A0076DA66 /* Decoder.m */,
+				DD82151119B712580076DA66 /* LSB2bit.h */,
+				DD82151219B712580076DA66 /* LSB2bit.m */,
+			);
+			name = LOG;
+			sourceTree = "<group>";
+		};
+		DDD1063319B6222D0096326C /* ANImageBitmapRep */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1063419B6222D0096326C /* ANImageBitmapRep.h */,
+				DDD1063519B6222D0096326C /* ANImageBitmapRep.m */,
+				DDD1063619B6222D0096326C /* BitmapContextRep.h */,
+				DDD1063719B6222D0096326C /* BitmapContextRep.m */,
+				DDD1063819B6222D0096326C /* Compatibility */,
+				DDD1063F19B6222D0096326C /* CoreGraphics */,
+				DDD1064419B6222D0096326C /* Manipulators */,
+			);
+			path = ANImageBitmapRep;
+			sourceTree = "<group>";
+		};
+		DDD1063819B6222D0096326C /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1063919B6222D0096326C /* NSImage+ANImageBitmapRep.h */,
+				DDD1063A19B6222D0096326C /* NSImage+ANImageBitmapRep.m */,
+				DDD1063B19B6222D0096326C /* OSCommonImage.h */,
+				DDD1063C19B6222D0096326C /* OSCommonImage.m */,
+				DDD1063D19B6222D0096326C /* UIImage+ANImageBitmapRep.h */,
+				DDD1063E19B6222D0096326C /* UIImage+ANImageBitmapRep.m */,
+			);
+			path = Compatibility;
+			sourceTree = "<group>";
+		};
+		DDD1063F19B6222D0096326C /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1064019B6222D0096326C /* CGContextCreator.h */,
+				DDD1064119B6222D0096326C /* CGContextCreator.m */,
+				DDD1064219B6222D0096326C /* CGImageContainer.h */,
+				DDD1064319B6222D0096326C /* CGImageContainer.m */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		DDD1064419B6222D0096326C /* Manipulators */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1064519B6222D0096326C /* BitmapContextManipulator.h */,
+				DDD1064619B6222D0096326C /* BitmapContextManipulator.m */,
+				DDD1064719B6222D0096326C /* BitmapCropManipulator.h */,
+				DDD1064819B6222D0096326C /* BitmapCropManipulator.m */,
+				DDD1064919B6222D0096326C /* BitmapDrawManipulator.h */,
+				DDD1064A19B6222D0096326C /* BitmapDrawManipulator.m */,
+				DDD1064B19B6222D0096326C /* BitmapRotationManipulator.h */,
+				DDD1064C19B6222D0096326C /* BitmapRotationManipulator.m */,
+				DDD1064D19B6222D0096326C /* BitmapScaleManipulator.h */,
+				DDD1064E19B6222D0096326C /* BitmapScaleManipulator.m */,
+			);
+			path = Manipulators;
+			sourceTree = "<group>";
+		};
+		DDD1065B19B6225C0096326C /* RES */ = {
+			isa = PBXGroup;
+			children = (
+				DDD1065C19B622830096326C /* pic.jpg */,
+			);
+			name = RES;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDD105F519B61C6C0096326C /* steganolibios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD1062819B61C6C0096326C /* Build configuration list for PBXNativeTarget "steganolibios" */;
+			buildPhases = (
+				DDD105F219B61C6C0096326C /* Sources */,
+				DDD105F319B61C6C0096326C /* Frameworks */,
+				DDD105F419B61C6C0096326C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = steganolibios;
+			productName = steganolibios;
+			productReference = DDD105F619B61C6C0096326C /* steganolibios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDD1061619B61C6C0096326C /* steganolibiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD1062B19B61C6C0096326C /* Build configuration list for PBXNativeTarget "steganolibiosTests" */;
+			buildPhases = (
+				DDD1061319B61C6C0096326C /* Sources */,
+				DDD1061419B61C6C0096326C /* Frameworks */,
+				DDD1061519B61C6C0096326C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD1061D19B61C6C0096326C /* PBXTargetDependency */,
+			);
+			name = steganolibiosTests;
+			productName = steganolibiosTests;
+			productReference = DDD1061719B61C6C0096326C /* steganolibiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDD105EE19B61C6C0096326C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = txl;
+				TargetAttributes = {
+					DDD1061619B61C6C0096326C = {
+						TestTargetID = DDD105F519B61C6C0096326C;
+					};
+				};
+			};
+			buildConfigurationList = DDD105F119B61C6C0096326C /* Build configuration list for PBXProject "steganolibios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDD105ED19B61C6C0096326C;
+			productRefGroup = DDD105F719B61C6C0096326C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDD105F519B61C6C0096326C /* steganolibios */,
+				DDD1061619B61C6C0096326C /* steganolibiosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDD105F419B61C6C0096326C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD1061219B61C6C0096326C /* Images.xcassets in Resources */,
+				DDD1060419B61C6C0096326C /* InfoPlist.strings in Resources */,
+				DDD1065D19B622830096326C /* pic.jpg in Resources */,
+				DDD1060D19B61C6C0096326C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD1061519B61C6C0096326C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD1062319B61C6C0096326C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDD105F219B61C6C0096326C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD82151319B712580076DA66 /* LSB2bit.m in Sources */,
+				DDD1065219B6222D0096326C /* OSCommonImage.m in Sources */,
+				DDD1065519B6222D0096326C /* CGImageContainer.m in Sources */,
+				DDD1065119B6222D0096326C /* NSImage+ANImageBitmapRep.m in Sources */,
+				DDD1065919B6222D0096326C /* BitmapRotationManipulator.m in Sources */,
+				DDD1065A19B6222D0096326C /* BitmapScaleManipulator.m in Sources */,
+				DDD1065619B6222D0096326C /* BitmapContextManipulator.m in Sources */,
+				DDD1065719B6222D0096326C /* BitmapCropManipulator.m in Sources */,
+				DDD1065319B6222D0096326C /* UIImage+ANImageBitmapRep.m in Sources */,
+				7BAE917519BF10370035F1DC /* Base64.m in Sources */,
+				DDD1065019B6222D0096326C /* BitmapContextRep.m in Sources */,
+				DDD1065419B6222D0096326C /* CGContextCreator.m in Sources */,
+				DDD1063219B61D550096326C /* Encoder.m in Sources */,
+				DDD1061019B61C6C0096326C /* ViewController.m in Sources */,
+				DDD1064F19B6222D0096326C /* ANImageBitmapRep.m in Sources */,
+				DD82151619B73B7A0076DA66 /* Decoder.m in Sources */,
+				DDD1065819B6222D0096326C /* BitmapDrawManipulator.m in Sources */,
+				DDD1060A19B61C6C0096326C /* AppDelegate.m in Sources */,
+				DDD1060619B61C6C0096326C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD1061319B61C6C0096326C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD1062519B61C6C0096326C /* steganolibiosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDD1061D19B61C6C0096326C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD105F519B61C6C0096326C /* steganolibios */;
+			targetProxy = DDD1061C19B61C6C0096326C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDD1060219B61C6C0096326C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD1060319B61C6C0096326C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DDD1060B19B61C6C0096326C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD1060C19B61C6C0096326C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDD1062119B61C6C0096326C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD1062219B61C6C0096326C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDD1062619B61C6C0096326C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDD1062719B61C6C0096326C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDD1062919B61C6C0096326C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/josel-txl/Desktop",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "steganolibios/steganolibios-Prefix.pch";
+				INFOPLIST_FILE = "steganolibios/steganolibios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDD1062A19B61C6C0096326C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/josel-txl/Desktop",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "steganolibios/steganolibios-Prefix.pch";
+				INFOPLIST_FILE = "steganolibios/steganolibios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DDD1062C19B61C6C0096326C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/steganolibios.app/steganolibios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "steganolibios/steganolibios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "steganolibiosTests/steganolibiosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DDD1062D19B61C6C0096326C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/steganolibios.app/steganolibios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "steganolibios/steganolibios-Prefix.pch";
+				INFOPLIST_FILE = "steganolibiosTests/steganolibiosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDD105F119B61C6C0096326C /* Build configuration list for PBXProject "steganolibios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD1062619B61C6C0096326C /* Debug */,
+				DDD1062719B61C6C0096326C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD1062819B61C6C0096326C /* Build configuration list for PBXNativeTarget "steganolibios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD1062919B61C6C0096326C /* Debug */,
+				DDD1062A19B61C6C0096326C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD1062B19B61C6C0096326C /* Build configuration list for PBXNativeTarget "steganolibiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD1062C19B61C6C0096326C /* Debug */,
+				DDD1062D19B61C6C0096326C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDD105EE19B61C6C0096326C /* Project object */;
+}
